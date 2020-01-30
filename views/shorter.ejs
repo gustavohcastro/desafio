@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <p></p>
+            <form method="post" action="/url">
+                
+                <input type="text" class="form-control" name="url" placeholder="Url Longa"> </input>
+                <p></p>
+                <button class="btn btn-primary"> Gerar Url Curta</button>
+                <p></p>
+                <p>Sua nova URL é: <a href="/url/<%= shorter %>">localhost:5000/url/<%= shorter %> </a></p>
+
+            </form>
+        </div>
+    </body>
+</html>
